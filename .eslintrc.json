@@ -1,15 +1,14 @@
 {
   "env": {
     "browser": true,
-    "node": true,
-    "jest": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": [
-    "airbnb",
     "plugin:react/recommended",
+    "airbnb",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
+    "prettier",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -17,23 +16,36 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": "latest",
+    "ecmaVersion": 12,
     "sourceType": "module"
   },
   "plugins": [
     "react",
-    "prettier",
     "@typescript-eslint",
     "eslint-plugin-import-helpers",
-    "react-hooks"
+    "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
-    "react/prop-types": "off",
-    "no-unused-expressions": "off",
-    "space-before-function-paren": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "camelcase": "off",
+    "import/no-unresolved": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ],
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "no-shadow": "off",
+    "no-console": "off",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
+    "lines-between-class-members": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -42,23 +54,37 @@
         "tsx": "never"
       }
     ],
-    "@typescript-eslint/no-floating-promises": "off",
-    "@typescript-eslint/no-unsafe-assignment": "off",
     "import-helpers/order-imports": [
       "warn",
       {
         "newlinesBetween": "always",
-        "groups": ["/^react/", "module", ["parent", "sibling", "index"]],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
+        "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
       }
-    ]
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.spec.js"]
+      }
+    ],
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"]
   },
   "settings": {
     "import/resolver": {
       "typescript": {}
-    },
-    "react": {
-      "version": "detect"
     }
   }
 }
