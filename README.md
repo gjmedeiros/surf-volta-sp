@@ -1,12 +1,14 @@
 # Surf Bate & Volta SP
 
 ```bash
-# Clone o repositorio
+# Clone este repositório
 $ git clone https://github.com/gjmedeiros/surf-volta-sp
 
-# Baixe as dependencias
+# Instale as dependências
 $ yarn install
 
-# Rode a aplicação na porta 3000
+# Execute a aplicação
 $ yarn start
+
+# Rode a aplicação na porta 3000
 ```

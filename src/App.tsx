@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landing from "./pages/Landing";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Landing from './pages/Landing'
 
-import "./assets/styles/global.css";
+import './assets/styles/global.css'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
