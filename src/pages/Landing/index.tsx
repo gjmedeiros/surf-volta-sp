@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+import PageHeader from '../../components/PageHeader'
+
+import './styles.css'
 
 function Landing() {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div id="landing" className="container">
+      <PageHeader />
     </div>
   )
 }
