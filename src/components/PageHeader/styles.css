@@ -24,10 +24,10 @@
 
 .nav-options {
   display: flex;
-  width: 60%;
+  width: 100%;
   position: absolute;
   top: 13.9rem;
-  left: -100%;
+  left:-100%;
   opacity: 1;
   transition: all 0.5s ease;
   flex-direction: column;
@@ -50,7 +50,8 @@
   list-style-type: none;
   height: 100%;
   padding-top: 1.6rem;  
-  padding-left: 10rem;
+  
+  
 }
 
 .option a {
@@ -83,4 +84,7 @@
   .mobile-menu {
     display: none;
   }
+
+ 
+  
 }
