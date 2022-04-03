@@ -1,0 +1,26 @@
+.card-item {
+  background: var(--color-box-base);
+  border: 15px solid var(--color-line-in-white);
+  border-radius: 3rem;
+}
+
+.card-item header {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item header img {
+  width: 37rem;
+  height: 37rem;
+  border-radius: 10%;
+}
+
+.card-item footer {
+  color: var(--color-button-text);
+  font: 700 1.6rem Archivo;
+  line-height: 3.6rem;
+  text-align: justify;
+  padding: 0rem 3.9rem;
+}

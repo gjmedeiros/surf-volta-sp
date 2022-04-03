@@ -74,11 +74,12 @@
     display: flex;
     position: unset;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 
-  .mobile-option {
-    display: none;
+  .option {
+    display: flex;
+    padding-left: 4rem;
   }
 
   .mobile-menu {
