@@ -1,0 +1,14 @@
+/*Mobile View */
+#login {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+@media (min-width: 700px) {
+  /*Desktop View*/
+  #login {
+    max-width: 100%;
+  }
+
+}

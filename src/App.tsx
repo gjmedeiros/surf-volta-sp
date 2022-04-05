@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Landing from './pages/Landing'
-import Management from './page Management'
+import Login from './pages/login'
+import Adm from './pages/adm'
 
 import './assets/styles/global.css'
 
@@ -11,11 +12,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/Management/adm" element={<Management />} />
+          <Route path="/Management/login" element={<Login />} />
+          <Route path="/Management/adm" element={<Adm />} />
         </Routes>
       </BrowserRouter>
     </div>
   )
 }
-
 export default App

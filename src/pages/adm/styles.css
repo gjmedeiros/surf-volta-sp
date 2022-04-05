@@ -1,0 +1,14 @@
+/*Mobile View */
+#Adm {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+@media (min-width: 700px) {
+  /*Desktop View*/
+  #Adm {
+    max-width: 100%;
+  }
+
+}
