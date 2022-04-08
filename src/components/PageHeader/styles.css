@@ -2,7 +2,10 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(var(--color-primary), var(--color-secundary));
+  background: linear-gradient(
+    var(--color-primary-header),
+    var(--color-secundary-header)
+  );
 }
 
 .page-header .top-bar-container {
@@ -27,7 +30,7 @@
   width: 100%;
   position: absolute;
   top: 13.9rem;
-  left:-100%;
+  left: -100%;
   opacity: 1;
   transition: all 0.5s ease;
   flex-direction: column;
@@ -36,7 +39,7 @@
 }
 
 .nav-options.active {
-  background: var(--color-secundary);
+  background: var(--color-secundary-header);
   left: 0;
   transition: all 0.5s ease;
   z-index: 1;
@@ -49,9 +52,7 @@
   display: inline-block;
   list-style-type: none;
   height: 100%;
-  padding-top: 1.6rem;  
-  
-  
+  padding-top: 1.6rem;
 }
 
 .option a {
@@ -85,7 +86,4 @@
   .mobile-menu {
     display: none;
   }
-
- 
-  
 }

@@ -1,22 +1,19 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
+import Adm from './pages/Adm'
 import Landing from './pages/Landing'
-import Login from './pages/login'
-import Adm from './pages/adm'
+import Login from './pages/Login'
 
 import './assets/styles/global.css'
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/Management/login" element={<Login />} />
-          <Route path="/Management/adm" element={<Adm />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  )
-}
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/Management/login" element={<Login />} />
+      <Route path="/Management/adm" element={<Adm />} />
+    </Routes>
+  </BrowserRouter>
+)
+
 export default App
