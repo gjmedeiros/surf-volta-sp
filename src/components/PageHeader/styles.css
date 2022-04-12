@@ -2,7 +2,10 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(var(--color-primary), var(--color-secundary));
+  background: linear-gradient(
+    var(--color-primary-header),
+    var(--color-secundary-header)
+  );
 }
 
 .page-header .top-bar-container {
@@ -36,7 +39,7 @@
 }
 
 .nav-options.active {
-  background: var(--color-secundary);
+  background: var(--color-secundary-header);
   left: 0;
   transition: all 0.5s ease;
   z-index: 1;
