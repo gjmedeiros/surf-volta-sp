@@ -48,7 +48,7 @@
   justify-content: center;
 }
 
-#login .container-login main footer a {
+#login .container-login main footer button {
   font-size: 15px;
   border: none;
   border-radius: 10px;

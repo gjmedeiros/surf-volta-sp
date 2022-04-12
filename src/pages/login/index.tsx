@@ -1,14 +1,33 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { FormEvent, useContext, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import logo from '../../assets/images/logo.svg'
 import Input from '../../components/Input'
+import { AuthContext } from '../../contexts/Auth/AuthContext'
 
 import './styles.css'
 
 const Login = () => {
+  const auth = useContext(AuthContext)
+  const navigate = useNavigate()
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+
+  const handleLogin = async (e: FormEvent) => {
+    e.preventDefault()
+
+    if (email && password) {
+      const isLogged = await auth.signin(email, password)
+
+      if (isLogged) {
+        navigate('/Management/adm')
+      } else {
+        // eslint-disable-next-line no-alert
+        alert('Falha na Autenticação')
+      }
+    }
+  }
 
   return (
     <div id="login" className="container">
@@ -19,7 +38,7 @@ const Login = () => {
             <img src={logo} alt="logo" />
           </header>
           <main>
-            <form>
+            <form onSubmit={handleLogin}>
               <fieldset>
                 <Input
                   name="Email"
@@ -41,11 +60,7 @@ const Login = () => {
               </fieldset>
 
               <footer>
-                {/* Botão Oficial */}
-                {/* <button type="submit">Login</button> */}
-
-                {/* Temporario até ser construido o BackEnd */}
-                <Link to="/Management/Adm">Login</Link>
+                <button type="submit">Login</button>
               </footer>
             </form>
           </main>
