@@ -2,7 +2,7 @@ import PageHeader from '../../components/PageHeader'
 
 import './styles.css'
 
-function market() {
+function Market() {
   return (
     <div id="market" className="market">
       <PageHeader />
@@ -10,4 +10,4 @@ function market() {
   )
 }
 
-export default market
+export default Market

@@ -30,7 +30,7 @@
 }
 
 #login .container-login .wrap-login header img {
-  width: 20rem;
+  width: 14.3rem;
 }
 
 #login .container-login main fieldset {
@@ -48,7 +48,7 @@
   justify-content: center;
 }
 
-#login .container-login main footer a {
+#login .container-login main footer button {
   font-size: 15px;
   border: none;
   border-radius: 10px;
