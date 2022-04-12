@@ -1,18 +1,29 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
+import { RequireAuth } from './contexts/Auth/RequireAuth'
+import Adm from './pages/Adm'
 import Landing from './pages/Landing'
+import Login from './pages/Login'
 
 import './assets/styles/global.css'
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <Routes>
+      {/* Route Publica */}
+      <Route path="/" element={<Landing />} />
+      <Route path="/Management/login" element={<Login />} />
+
+      {/* Route Privada */}
+      <Route
+        path="/Management/adm"
+        element={
+          <RequireAuth>
+            <Adm />
+          </RequireAuth>
+        }
+      />
+    </Routes>
   )
 }
 
