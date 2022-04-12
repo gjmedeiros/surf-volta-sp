@@ -1,6 +1,5 @@
 import CardItem from '../../components/CardItem'
 import PageHeader from '../../components/PageHeader'
-
 import './styles.css'
 
 function Landing() {
