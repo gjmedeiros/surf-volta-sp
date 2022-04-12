@@ -7,7 +7,27 @@ import logoImg from '../../assets/images/logo.svg'
 
 import './styles.css'
 
-function PageHeader() {
+interface INPageHeaderProps {
+  path: string
+  option: string
+  path2: string
+  option2: string
+  path3: string
+  option3: string
+  path4: string
+  option4: string
+}
+
+const PageHeader: React.FC<INPageHeaderProps> = ({
+  path,
+  option,
+  path2,
+  option2,
+  path3,
+  option3,
+  path4,
+  option4
+}) => {
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
@@ -22,23 +42,23 @@ function PageHeader() {
         </div>
         <ul className={click ? 'nav-options active' : 'nav-options'}>
           <li className="option">
-            <Link to="/" onClick={closeMobileMenu}>
-              <strong>SobreNós</strong>
+            <Link to={`${path}`} onClick={closeMobileMenu}>
+              <strong>{option}</strong>
             </Link>
           </li>
           <li className="option">
-            <Link to="/" onClick={closeMobileMenu}>
-              <strong>Circuito</strong>
+            <Link to={`${path2}`} onClick={closeMobileMenu}>
+              <strong>{option2}</strong>
             </Link>
           </li>
           <li className="option">
-            <Link to="/" onClick={closeMobileMenu}>
-              <strong>Mercado</strong>
+            <Link to={`${path3}`} onClick={closeMobileMenu}>
+              <strong>{option3}</strong>
             </Link>
           </li>
           <li className="option">
-            <Link to="/" onClick={closeMobileMenu}>
-              <strong>Grupo do WhatsApp</strong>
+            <Link to={`${path4}`} onClick={closeMobileMenu}>
+              <strong>{option4}</strong>
             </Link>
           </li>
         </ul>
