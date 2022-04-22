@@ -93,3 +93,14 @@
     max-width: 100%;
   }
 }
+
+.botão-altvisível{
+  display: inline-flex;
+}
+
+.stylevisibili{
+  margin-left: 2.5rem;
+  height: 5rem;
+  background-color:var(--color-background-login) ;
+  border-style: none;
+}
