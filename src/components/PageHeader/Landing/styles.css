@@ -1,5 +1,5 @@
 /*Mobile View */
-.page-header {
+.page-header-landing {
   display: flex;
   flex-direction: column;
   background: linear-gradient(
@@ -8,7 +8,7 @@
   );
 }
 
-.page-header .top-bar-container {
+.page-header-landing .top-bar-container-landing {
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -16,16 +16,16 @@
   align-items: center;
 }
 
-.page-header .top-bar-container a {
+.page-header-landing .top-bar-container-landing a {
   height: 2.4rem;
   transition: opacity 0.2s;
 }
 
-.page-header .top-bar-container a:hover {
+.page-header-landing .top-bar-container-landing a:hover {
   opacity: 0.6;
 }
 
-.nav-options {
+.page-header-landing .top-bar-container-landing .nav-options-landing {
   display: flex;
   width: 100%;
   position: absolute;
@@ -38,7 +38,7 @@
   list-style-type: none;
 }
 
-.nav-options.active {
+.page-header-landing .top-bar-container-landing .nav-options-landing-active {
   background: var(--color-secundary-header);
   left: 0;
   transition: all 0.5s ease;
@@ -48,42 +48,42 @@
   padding-left: 0px;
 }
 
-.option {
+.page-header-landing .top-bar-container-landing .nav-options-landing li {
   display: inline-block;
   list-style-type: none;
   height: 100%;
   padding-top: 1.6rem;
 }
 
-.option a {
+.page-header-landing .top-bar-container-landing .nav-options-landing li a {
   text-decoration: none;
 }
 
-.option strong {
+.page-header-landing .top-bar-container-landing .nav-options-landing li strong {
   color: var(--color-button-text);
   font: 700 2rem Archivo;
   line-height: 4.2rem;
 }
 
-.mobile-menu {
+.page-header-landing .top-bar-container-landing .mobile-menu-landing {
   display: block;
 }
 
 @media (min-width: 700px) {
   /*Desktop View*/
-  .page-header .top-bar-container .nav-options {
+  .page-header-landing .top-bar-container-landing .nav-options-landing {
     display: flex;
     position: unset;
     flex-direction: row;
     justify-content: flex-end;
   }
 
-  .option {
+  .page-header-landing .top-bar-container-landing .nav-options-landing li {
     display: flex;
     padding-left: 4rem;
   }
 
-  .mobile-menu {
+  .page-header-landing .top-bar-container-landing .mobile-menu-landing {
     display: none;
   }
 }
