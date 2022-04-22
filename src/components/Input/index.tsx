@@ -11,7 +11,7 @@ const Input: React.FC<INputProps> = ({ type, name, ...rest }) => {
   return (
     <div className="input-block">
       <input type={type} {...rest} />
-      <span className="focus-input" data-placeholder={name} />
+      <span className="text-input" data-placeholder={name} />
     </div>
   )
 }
