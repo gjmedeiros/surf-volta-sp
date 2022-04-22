@@ -13,6 +13,9 @@ const Login = () => {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [visible, setVisible] = useState(false)
+
+  const handleVisible = () => setVisible(!visible)
 
   const handleLogin = async (e: FormEvent) => {
     e.preventDefault()
@@ -42,6 +45,7 @@ const Login = () => {
               <fieldset>
                 <Input
                   name="Email"
+                  type="text"
                   value={email}
                   className={email !== '' ? 'has-val input' : 'input'}
                   onChange={e => {
@@ -51,12 +55,17 @@ const Login = () => {
 
                 <Input
                   name="Password"
+                  type={visible ? 'text' : 'password'}
                   className={password !== '' ? 'has-val input' : 'input'}
                   value={password}
                   onChange={e => {
                     setPassword(e.target.value)
                   }}
                 />
+
+                {/* <button type="button" onClick={handleVisible}>
+                  Visivel
+                </button> */}
               </fieldset>
 
               <footer>

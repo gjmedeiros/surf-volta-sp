@@ -1,49 +1,49 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import menuIcon from '../../assets/images/icons/menu.svg'
-import closeIcon from '../../assets/images/icons/x.svg'
-import logoImg from '../../assets/images/logo.svg'
+import menuIcon from '../../../assets/images/icons/menu.svg'
+import closeIcon from '../../../assets/images/icons/x.svg'
+import logoImg from '../../../assets/images/logo.svg'
 
 import './styles.css'
 
-function PageHeader() {
+const PageHeader = () => {
   const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
 
   return (
-    <header className="page-header">
-      <div className="top-bar-container">
+    <header className="page-header-adm">
+      <div className="top-bar-container-adm">
         <div>
           <Link to="/">
             <img src={logoImg} alt="Logo" />
           </Link>
         </div>
-        <ul className={click ? 'nav-options active' : 'nav-options'}>
-          <li className="option">
+        <ul className={click ? 'nav-options-adm active' : 'nav-options-adm'}>
+          <li>
             <Link to="/" onClick={closeMobileMenu}>
-              <strong>SobreNós</strong>
+              <strong>Alterar Sobre Nós</strong>
             </Link>
           </li>
-          <li className="option">
+          <li>
             <Link to="/" onClick={closeMobileMenu}>
-              <strong>Circuito</strong>
+              <strong>Alterar Circuito</strong>
             </Link>
           </li>
-          <li className="option">
+          <li>
             <Link to="/" onClick={closeMobileMenu}>
-              <strong>Mercado</strong>
+              <strong>Alterar Grupo do Whats</strong>
             </Link>
           </li>
-          <li className="option">
+          <li>
             <Link to="/" onClick={closeMobileMenu}>
-              <strong>Grupo do WhatsApp</strong>
+              <strong>Alterar Mercado</strong>
             </Link>
           </li>
         </ul>
         <div
-          className="mobile-menu"
+          className="mobile-menu-adm"
           onClick={handleClick}
           onKeyDown={handleClick}
           role="button"
