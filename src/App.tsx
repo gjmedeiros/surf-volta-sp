@@ -13,12 +13,12 @@ function App() {
     <Routes>
       {/* Route Publica */}
       <Route path="/" element={<Landing />} />
-      <Route path="/Management/Market" element={<Market />} />
-      <Route path="/Management/login" element={<Login />} />
+      {/* <Route path="/management/market" element={<Market />} /> */}
+      <Route path="/management/login" element={<Login />} />
 
       {/* Route Privada */}
       <Route
-        path="/Management/adm"
+        path="/management/adm"
         element={
           <RequireAuth>
             <Adm />

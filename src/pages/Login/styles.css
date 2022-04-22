@@ -42,6 +42,21 @@
   padding: 0 2.4rem;
 }
 
+#login .container-login main fieldset .block-input-password {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#login .container-login main fieldset .block-input-password button {
+  background-color: var(--color-background-login);
+  position: absolute;
+  height: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border: none;
+}
+
 #login .container-login main fieldset + fieldset {
   margin-top: 6.4rem;
 }
@@ -81,15 +96,4 @@
   #login {
     max-width: 100%;
   }
-}
-
-.botão-altvisível{
-  display: inline-flex;
-}
-
-.stylevisibili{
-  margin-left: 2.5rem;
-  height: 5rem;
-  background-color:var(--color-background-login) ;
-  border-style: none;
 }
