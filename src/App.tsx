@@ -4,6 +4,7 @@ import { RequireAuth } from './contexts/Auth/RequireAuth'
 import Adm from './pages/Adm'
 import Landing from './pages/Landing'
 import Login from './pages/Login'
+import Market from './pages/Market'
 
 import './assets/styles/global.css'
 
@@ -12,11 +13,12 @@ function App() {
     <Routes>
       {/* Route Publica */}
       <Route path="/" element={<Landing />} />
-      <Route path="/Management/login" element={<Login />} />
+      {/* <Route path="/management/market" element={<Market />} /> */}
+      <Route path="/management/login" element={<Login />} />
 
       {/* Route Privada */}
       <Route
-        path="/Management/adm"
+        path="/management/adm"
         element={
           <RequireAuth>
             <Adm />

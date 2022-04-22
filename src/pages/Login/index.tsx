@@ -1,6 +1,8 @@
 import { FormEvent, useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import Eyeoff from '../../assets/images/icons/eye-off.svg'
+import Eyeo from '../../assets/images/icons/eye.svg'
 import logo from '../../assets/images/logo.svg'
 import Input from '../../components/Input'
 import { AuthContext } from '../../contexts/Auth/AuthContext'
@@ -16,6 +18,8 @@ const Login = () => {
   const [visible, setVisible] = useState(false)
 
   const handleVisible = () => setVisible(!visible)
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
 
   const handleLogin = async (e: FormEvent) => {
     e.preventDefault()
@@ -52,22 +56,31 @@ const Login = () => {
                     setEmail(e.target.value)
                   }}
                 />
+                <div className="block-input-password">
+                  <Input
+                    name="Password"
+                    type={visible ? 'text' : 'password'}
+                    className={password !== '' ? 'has-val input' : 'input'}
+                    value={password}
+                    onChange={e => {
+                      setPassword(e.target.value)
+                    }}
+                  />
 
-                <Input
-                  name="Password"
-                  type={visible ? 'text' : 'password'}
-                  className={password !== '' ? 'has-val input' : 'input'}
-                  value={password}
-                  onChange={e => {
-                    setPassword(e.target.value)
-                  }}
-                />
-
-                {/* <button type="button" onClick={handleVisible}>
-                  Visivel
-                </button> */}
+                  <button
+                    type="button"
+                    onClick={handleVisible}
+                    onKeyDown={handleClick}
+                    tabIndex={0}
+                  >
+                    {visible ? (
+                      <img src={Eyeoff} alt="on" />
+                    ) : (
+                      <img src={Eyeo} alt="off" />
+                    )}
+                  </button>
+                </div>
               </fieldset>
-
               <footer>
                 <button type="submit">Login</button>
               </footer>
