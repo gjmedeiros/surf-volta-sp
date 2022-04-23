@@ -16,52 +16,52 @@
   font-family: Archivo;
 }
 
-#landing footer {
+#landing .block-footer {
   background-color: var(--color-primary-header);
   padding: 1rem;
 }
 
-#landing footer strong {
+#landing .block-footer strong {
   color: #000000;
   font-size: 1.6rem;
   font-family: Archivo;
 }
 
-#landing footer .block-icons {
+#landing .block-footer .block-icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: background 0.4s ease;
 }
 
-#landing footer .block-icons img {
+#landing .block-footer .block-icons img {
   height: 5rem;
   width: 5rem;
 }
 
-#landing footer .block-icons .block-icons-sociais {
+#landing .block-footer .block-icons .block-icons-sociais {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-#landing footer .block-icons .block-icons-sociais button + button {
+#landing .block-footer .block-icons .block-icons-sociais button + button {
   margin-left: 1rem;
 }
 
-#landing footer .block-icons .block-icons-sociais .facebook {
+#landing .block-footer .block-icons .block-icons-sociais .facebook {
   border: none;
   cursor: pointer;
   background-color: transparent;
 }
 
-#landing footer .block-icons .block-icons-sociais .instagram {
+#landing .block-footer .block-icons .block-icons-sociais .instagram {
   border: none;
   cursor: pointer;
   background-color: transparent;
 }
 
-#landing footer .block-icons .block-icons-group {
+#landing .block-footer .block-icons .block-icons-group {
   background-color: #25d366;
   border-radius: 2rem;
   padding: 1rem;
@@ -72,11 +72,11 @@
   border: none;
 }
 
-#landing footer .block-icons .block-icons-group:hover {
+#landing .block-footer .block-icons .block-icons-group:hover {
   background-color: #1dc259;
 }
 
-#landing footer .block-icons .block-icons-group strong {
+#landing .block-footer .block-icons .block-icons-group strong {
   margin-left: 1rem;
 }
 
@@ -93,5 +93,26 @@
 
   #landing main .block-group-camp .card-item + .card-item {
     margin-top: 0rem;
+  }
+
+  #landing main .block-group-circuit {
+    /* display: flex; */
+    justify-content: center;
+  }
+
+  #landing main .block-group-circuit .block-circuit .card-item {
+    display: flex;
+    align-items: center;
+    /* padding: 6rem; */
+  }
+
+  #landing main .block-group-circuit .card-item header img {
+    height: 50rem;
+  }
+
+  #landing main .block-group-circuit .block-sponsors .card-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
   }
 }
