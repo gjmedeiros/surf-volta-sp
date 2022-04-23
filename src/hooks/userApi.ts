@@ -8,10 +8,10 @@ export const userApi = () => ({
   },
   signin: async (email: string, password: string) => {
     // Uso de Teste até construção do Back End
-    return {
-      user: { id: 1, name: 'Gabriel', email: 'gjmedeiros@outlook.com' },
-      token: '12345678'
-    }
+    // return {
+    //   user: { id: 1, name: 'Gabriel', email: 'gjmedeiros@outlook.com' },
+    //   token: '12345678'
+    // }
     const response = await api.post('/signin', { email, password })
 
     return response.data
