@@ -22,7 +22,7 @@ const PageHeader = () => {
         </div>
         <ul
           className={
-            click ? 'nav-options-landing-active' : 'nav-options-landing'
+            click ? 'nav-options-landing active' : 'nav-options-landing'
           }
         >
           <li>
