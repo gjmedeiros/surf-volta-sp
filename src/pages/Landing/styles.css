@@ -53,12 +53,22 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  transition: opacity 0.2s;
+}
+
+#landing .block-footer .block-icons .block-icons-sociais .facebook:hover {
+  opacity: 0.8;
 }
 
 #landing .block-footer .block-icons .block-icons-sociais .instagram {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  transition: opacity 0.2s;
+}
+
+#landing .block-footer .block-icons .block-icons-sociais .instagram:hover {
+  opacity: 0.8;
 }
 
 #landing .block-footer .block-icons .block-icons-group {
