@@ -13,7 +13,7 @@ function App() {
     <Routes>
       {/* Route Publica */}
       <Route path="/" element={<Landing />} />
-      {/* <Route path="/management/market" element={<Market />} /> */}
+      <Route path="/management/market" element={<Market />} />
       <Route path="/management/login" element={<Login />} />
 
       {/* Route Privada */}
