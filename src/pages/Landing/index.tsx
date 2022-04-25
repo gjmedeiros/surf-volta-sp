@@ -1,12 +1,14 @@
 import camp1 from '../../assets/images/camp1.svg'
 import camp2 from '../../assets/images/camp2.svg'
 import camp3 from '../../assets/images/camp3.svg'
+import PatrocinApoio from '../../components/cardPatrocinApoio'
 import facebook from '../../assets/images/icons/facebook.svg'
 import instagram from '../../assets/images/icons/instagram.svg'
 import whatsapp from '../../assets/images/icons/whatsapp.svg'
 import surfbt2 from '../../assets/images/surfbt2.svg'
 import CardItem from '../../components/CardItem'
 import PageHeader from '../../components/PageHeader/Landing'
+import Barcas from '../../components/CardBarcas'
 
 import './styles.css'
 
@@ -57,20 +59,17 @@ function Landing() {
           venha os próximos.`}
               />
             </div>
-            <div className="block-sponsors">
-              <CardItem
-                imagem={camp3}
-                description="Nosso objetivo é proporcionar surf para todos, pois acreditamos que o
-          surf é um estilo de vida e deve ser compartilhado na sua essência,
-          ecercendo o espírito aloha."
-              />
+            <div className="support">
+              <PatrocinApoio />
+              <div className="Barcas">
+                <Barcas />
+              </div>
             </div>
           </div>
         </div>
       </main>
       <footer className="block-footer">
         <strong>Siga nas Redes Sociais</strong>
-
         <div className="block-icons">
           <div className="block-icons-sociais">
             <button type="button" className="facebook">
