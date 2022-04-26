@@ -1,28 +1,28 @@
 /*Mobile View*/
-.card-item {
+.card-item-landing {
   background: var(--color-background-card);
   border: 1.5rem solid var(--color-line-in-white-card);
   border-radius: 3rem;
 }
 
-.card-item + .card-item {
+.card-item-landing + .card-item-landing {
   margin-top: 1rem;
 }
 
-.card-item header {
+.card-item-landing header {
   padding: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.card-item header img {
+.card-item-landing header img {
   width: 37rem;
   height: 37rem;
   border-radius: 3rem;
 }
 
-.card-item footer {
+.card-item-landing footer {
   color: var(--color-button-text);
   font: 700 1.6rem Archivo;
   line-height: 3.6rem;

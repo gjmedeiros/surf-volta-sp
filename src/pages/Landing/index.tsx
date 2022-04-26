@@ -5,8 +5,8 @@ import facebook from '../../assets/images/icons/facebook.svg'
 import instagram from '../../assets/images/icons/instagram.svg'
 import whatsapp from '../../assets/images/icons/whatsapp.svg'
 import surfbt2 from '../../assets/images/surfbt2.svg'
-import CardItem from '../../components/CardItem'
-import PageHeader from '../../components/PageHeader/Landing'
+import CardItem from '../../components/Landing/CardItem'
+import PageHeader from '../../components/Landing/Header'
 
 import './styles.css'
 

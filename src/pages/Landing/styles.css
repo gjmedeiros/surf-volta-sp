@@ -101,7 +101,7 @@
     justify-content: center;
   }
 
-  #landing main .block-group-camp .card-item + .card-item {
+  #landing main .block-group-camp .card-item-landing + .card-item-landing {
     margin-top: 0rem;
   }
 
@@ -110,17 +110,17 @@
     justify-content: center;
   }
 
-  #landing main .block-group-circuit .block-circuit .card-item {
+  #landing main .block-group-circuit .block-circuit .card-item-landing {
     display: flex;
     align-items: center;
     /* padding: 6rem; */
   }
 
-  #landing main .block-group-circuit .card-item header img {
+  #landing main .block-group-circuit .card-item-landing header img {
     height: 50rem;
   }
 
-  #landing main .block-group-circuit .block-sponsors .card-item {
+  #landing main .block-group-circuit .block-sponsors .card-item-landing {
     display: flex;
     align-items: center;
     padding: 1rem;

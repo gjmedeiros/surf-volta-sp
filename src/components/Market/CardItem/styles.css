@@ -1,0 +1,47 @@
+/*Mobile View*/
+.card-item-market {
+  background: var(--color-background-card);
+  border: 1.5rem solid var(--color-line-in-white-card);
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item-market + .card-item-market {
+  margin-top: 1rem;
+}
+
+.card-item-market header {
+  padding: 1em;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+}
+
+.card-item-market header strong {
+  font: 700 1.8rem Poppins;
+  color: #000000;
+  display: flex;
+}
+
+.card-item-market header img {
+  width: 20rem;
+  height: 37rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  background-color: black;
+}
+
+.card-item-market .block-info-market {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-item-market .block-info-market p {
+  padding: 0.5rem;
+  font: 400 1.6rem Archivo;
+  color: #000000;
+  text-align: justify;
+}

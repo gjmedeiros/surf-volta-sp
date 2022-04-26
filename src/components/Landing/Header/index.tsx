@@ -41,7 +41,7 @@ const PageHeader = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={closeMobileMenu}>
+            <Link to="/management/market" onClick={closeMobileMenu}>
               <strong>Mercado</strong>
             </Link>
           </li>

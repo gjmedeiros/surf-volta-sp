@@ -7,11 +7,11 @@ interface INCardItemProps {
   description: string
 }
 
-const CardItem: React.FC<INCardItemProps> = ({ imagem, description }) => {
+const Landing: React.FC<INCardItemProps> = ({ imagem, description }) => {
   const newDescription = description.split('\n').map(str => <p>{str}</p>)
 
   return (
-    <article className="card-item">
+    <article className="card-item-landing">
       <header>
         <img src={imagem} alt="camp1" />
       </header>
@@ -20,4 +20,4 @@ const CardItem: React.FC<INCardItemProps> = ({ imagem, description }) => {
   )
 }
 
-export default CardItem
+export default Landing
