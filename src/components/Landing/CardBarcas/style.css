@@ -1,76 +1,21 @@
-.card-barcas {
-  background: var(--color-background-card);
-  border: 1.5rem solid var(--color-line-in-white-card);
-  border-radius: 3rem;
-  color: black;
+.card-barcas header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.img-barcas {
+.card-barcas header img {
   width: 20rem;
+  height: 15rem;
 }
 
-.barcas-flex-1 {
-  margin: 2rem;
-}
-
-.barcas-flex-2 {
-  margin: 2rem;
-}
-
-.p-barcas {
-  font-weight: 900;
-}
-
-.custos {
-  margin-top: 2rem;
-}
-
-.organization {
-  margin-top: 2rem;
-}
-
-@media (min-width: 700px) {
-  h1 {
-    width: 1px;
-  }
-
-  .card-barcas {
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .barcas-flex-1 {
-    display: inline-flex;
-  }
-
-  .barcas-flex-2 {
-    display: inline-flex;
-  }
-
-  .p-barcas {
-    color: black;
-    font-weight: 900;
-    display: inline-block;
-    margin-top: 1em;
-    margin-left: 2em;
-  }
-
-  .furgaoo {
-    display: flex;
-  }
-
-  .custos {
-    padding-left: 5rem;
-    display: flex;
-  }
-
-  .duvid {
-    display: flex;
-  }
-
-  .organization {
-    padding-left: 6rem;
-    display: flex;
-  }
+.card-barcas footer {
+  color: var(--color-button-text);
+  font: 700 1.6rem Archivo;
+  line-height: 3.6rem;
+  text-align: justify;
+  padding: 0rem 3.9rem;
+  border-radius: 3rem;
+  background: transparent;
+  /* margin-top: 1rem; */
 }

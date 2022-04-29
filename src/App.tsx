@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import { RequireAuth } from './contexts/Auth/RequireAuth'
 import Adm from './pages/Adm'
-import Landing from './pages/Landing'
+import { Landing } from './pages/Landing'
 import Login from './pages/Login'
 import Market from './pages/Market'
 
