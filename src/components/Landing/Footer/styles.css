@@ -70,4 +70,5 @@
 
 .block-footer .block-icons .block-icons-group strong {
   margin-left: 1rem;
+  display: none;
 }

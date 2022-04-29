@@ -1,16 +1,17 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import menuIcon from '../../../assets/images/icons/menu.svg'
 import closeIcon from '../../../assets/images/icons/x.svg'
 import logoImg from '../../../assets/images/logo.svg'
+import { Landing } from '../../../pages/Landing'
 
 import './styles.css'
 
 const PageHeader = () => {
   const [click, setClick] = useState(false)
-  const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
+  const handleClick = () => setClick(!click)
 
   return (
     <header className="page-header-landing">
@@ -26,19 +27,19 @@ const PageHeader = () => {
           }
         >
           <li>
-            <Link to="/" onClick={closeMobileMenu}>
+            <button type="button" onClick={closeMobileMenu}>
               <strong>Sobre Nós</strong>
-            </Link>
+            </button>
           </li>
           <li>
-            <Link to="/" onClick={closeMobileMenu}>
+            <button type="button" onClick={closeMobileMenu}>
               <strong>Circuito</strong>
-            </Link>
+            </button>
           </li>
           <li>
-            <Link to="/" onClick={closeMobileMenu}>
+            <button type="button" onClick={closeMobileMenu}>
               <strong>Grupo do Whats</strong>
-            </Link>
+            </button>
           </li>
           <li>
             <Link to="/management/market" onClick={closeMobileMenu}>
