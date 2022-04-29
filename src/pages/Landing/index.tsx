@@ -1,11 +1,9 @@
 import camp1 from '../../assets/images/camp1.svg'
 import camp2 from '../../assets/images/camp2.svg'
 import camp3 from '../../assets/images/camp3.svg'
-import facebook from '../../assets/images/icons/facebook.svg'
-import instagram from '../../assets/images/icons/instagram.svg'
-import whatsapp from '../../assets/images/icons/whatsapp.svg'
 import surfbt2 from '../../assets/images/surfbt2.svg'
 import CardItem from '../../components/Landing/CardItem'
+import Footer from '../../components/Landing/Footer'
 import PageHeader from '../../components/Landing/Header'
 
 import './styles.css'
@@ -38,13 +36,13 @@ function Landing() {
           ecercendo o espírito aloha."
           />
         </div>
-        <div>
-          <strong>Circuito</strong>
-          <div className="block-group-circuit">
-            <div className="block-circuit">
-              <CardItem
-                imagem={surfbt2}
-                description={`Não perca esse evento!!
+
+        <strong>Circuito</strong>
+        <div className="block-group-circuit">
+          <div className="block-circuit">
+            <CardItem
+              imagem={surfbt2}
+              description={`Não perca esse evento!!
             Nossa primeira etapa será realizada dia 9 e 10 de abril em Bertioga na
           frente da pista de skate ao lado do hotel 27.
           Com surfistas de todos os lugares, esse circuito é para toda a família
@@ -55,38 +53,19 @@ function Landing() {
           categoria.
           Teremos a maior honra de recebê-los em nosso evento! e que
           venha os próximos.`}
-              />
-            </div>
-            <div className="block-sponsors">
-              <CardItem
-                imagem={camp3}
-                description="Nosso objetivo é proporcionar surf para todos, pois acreditamos que o
+            />
+          </div>
+          <div className="block-sponsors">
+            <CardItem
+              imagem={camp3}
+              description="Nosso objetivo é proporcionar surf para todos, pois acreditamos que o
           surf é um estilo de vida e deve ser compartilhado na sua essência,
           ecercendo o espírito aloha."
-              />
-            </div>
+            />
           </div>
         </div>
       </main>
-      <footer className="block-footer">
-        <strong>Siga nas Redes Sociais</strong>
-
-        <div className="block-icons">
-          <div className="block-icons-sociais">
-            <button type="button" className="facebook">
-              <img src={facebook} alt="facebook" />
-            </button>
-            <button type="button" className="instagram">
-              <img src={instagram} alt="instagram" />
-            </button>
-          </div>
-
-          <button type="button" className="block-icons-group">
-            <img src={whatsapp} alt="whatsapp" />
-            <strong>Grupo do WhatsApp</strong>
-          </button>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

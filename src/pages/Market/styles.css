@@ -4,9 +4,28 @@
   height: 100vh;
 }
 
+#market main > strong {
+  color: #000000;
+  font: 700 1.8rem Archivo;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  background-color: #24fec1;
+  border-radius: 1rem;
+}
+
 @media (min-width: 700px) {
   /*Desktop View*/
   #market {
     max-width: 100%;
+  }
+
+  #market main .block-board {
+    display: grid;
+    grid-template-columns: repeat(3, 50rem);
+  }
+
+  #market main .block-board .card-item-market + .card-item-market {
+    margin-top: 0rem;
   }
 }
