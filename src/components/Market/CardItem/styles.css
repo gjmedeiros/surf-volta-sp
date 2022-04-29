@@ -1,0 +1,81 @@
+/*Mobile View*/
+.card-item-market {
+  background: var(--color-background-card);
+  border: 1.5rem solid var(--color-line-in-white-card);
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item-market + .card-item-market {
+  margin-top: 1rem;
+}
+
+.card-item-market header {
+  padding: 1rem;
+}
+
+.card-item-market header strong {
+  display: flex;
+  color: #000000;
+  font: 700 1.8rem Poppins;
+  position: absolute;
+  margin-left: 1rem;
+}
+
+.card-item-market header img {
+  width: 20rem;
+  height: 37rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  background-color: black;
+  margin-top: 3rem;
+}
+
+.card-item-market .block-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.card-item-market .block-info .block-info-market {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item-market .block-info .block-info-market p {
+  padding: 0.5rem;
+  font: 400 1.6rem Archivo;
+  color: #000000;
+  text-align: justify;
+}
+
+.card-item-market .block-info .block-icons-group {
+  margin-top: 3.7rem;
+}
+
+.card-item-market .block-info .block-icons-group button {
+  background-color: #25d366;
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+.card-item-market .block-info .block-icons-group button:hover {
+  background-color: #1dc259;
+}
+
+.card-item-market .block-info .block-icons-group button img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.card-item-market .block-info .block-icons-group button strong {
+  margin-left: 1rem;
+  color: #000000;
+  font-size: 1.8rem;
+  font-family: Archivo;
+}

@@ -1,0 +1,21 @@
+.card-barcas header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-barcas header img {
+  width: 20rem;
+  height: 15rem;
+}
+
+.card-barcas footer {
+  color: var(--color-button-text);
+  font: 700 1.6rem Archivo;
+  line-height: 3.6rem;
+  text-align: justify;
+  padding: 0rem 3.9rem;
+  border-radius: 3rem;
+  background: transparent;
+  /* margin-top: 1rem; */
+}

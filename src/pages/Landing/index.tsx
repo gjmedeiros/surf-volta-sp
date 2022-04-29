@@ -1,16 +1,22 @@
+import { useRef } from 'react'
+
 import camp1 from '../../assets/images/camp1.svg'
 import camp2 from '../../assets/images/camp2.svg'
 import camp3 from '../../assets/images/camp3.svg'
-import facebook from '../../assets/images/icons/facebook.svg'
-import instagram from '../../assets/images/icons/instagram.svg'
-import whatsapp from '../../assets/images/icons/whatsapp.svg'
+import support from '../../assets/images/icons/support.svg'
+import custo from '../../assets/images/iconsBarcas/custo.svg'
+import duvida from '../../assets/images/iconsBarcas/duvida.svg'
+import furgao from '../../assets/images/iconsBarcas/furgao.svg'
+import organizar from '../../assets/images/iconsBarcas/organizar.svg'
 import surfbt2 from '../../assets/images/surfbt2.svg'
-import CardItem from '../../components/CardItem'
-import PageHeader from '../../components/PageHeader/Landing'
+import CardBarcas from '../../components/Landing/CardBarcas'
+import CardItem from '../../components/Landing/CardItem'
+import Footer from '../../components/Landing/Footer'
+import PageHeader from '../../components/Landing/Header'
 
 import './styles.css'
 
-function Landing() {
+export const Landing = () => {
   return (
     <div id="landing" className="container">
       <PageHeader />
@@ -38,13 +44,13 @@ function Landing() {
           ecercendo o espírito aloha."
           />
         </div>
-        <div>
-          <strong>Circuito</strong>
-          <div className="block-group-circuit">
-            <div className="block-circuit">
-              <CardItem
-                imagem={surfbt2}
-                description={`Não perca esse evento!!
+
+        <strong>Circuito</strong>
+
+        <div className="block-circuit">
+          <CardItem
+            imagem={surfbt2}
+            description={`Não perca esse evento!!
             Nossa primeira etapa será realizada dia 9 e 10 de abril em Bertioga na
           frente da pista de skate ao lado do hotel 27.
           Com surfistas de todos os lugares, esse circuito é para toda a família
@@ -55,40 +61,64 @@ function Landing() {
           categoria.
           Teremos a maior honra de recebê-los em nosso evento! e que
           venha os próximos.`}
-              />
-            </div>
-            <div className="block-sponsors">
-              <CardItem
-                imagem={camp3}
-                description="Nosso objetivo é proporcionar surf para todos, pois acreditamos que o
-          surf é um estilo de vida e deve ser compartilhado na sua essência,
-          ecercendo o espírito aloha."
-              />
-            </div>
+          />
+        </div>
+
+        <article className="card-support">
+          <header>
+            <img src={support} alt="support" />
+          </header>
+          <div>
+            <strong>Apoiadores</strong>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              architecto ducimus porro deserunt fugiat maiores numquam
+              necessitatibus suscipit nulla deleniti cumque fuga excepturi,
+              eaque natus sit doloremque, pariatur dolor eveniet.
+            </p>
           </div>
+          <div>
+            <strong>Patrocinadores</strong>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+              vero tenetur, beatae, perferendis quas impedit nobis magnam quasi
+              optio inventore itaque ex. Pariatur animi aliquid voluptas
+              obcaecati, deleniti dolores quibusdam.
+            </p>
+          </div>
+        </article>
+
+        <div className="block-group-barcas">
+          <CardBarcas
+            imagem={furgao}
+            description="As barcas tem o propósito de fazer um surf com amigos e pessoas novas,
+        se você não tem carro para descer é uma boa solução e para quem gosta de
+        companhias para fazer um surf."
+          />
+          <CardBarcas
+            imagem={custo}
+            description="Os Valores do bate e volta é dividido entre todos que descem, quanto
+            mais amigos mais barato para todos! é dividido pedágio, gasolina e
+            etc."
+          />
+          <CardBarcas
+            imagem={duvida}
+            description="Sempre postamos e anunciamos as barcas no grupo, para vc que tem
+            carro é só adicionar e avisar de onde você vai estar saindo de sp,
+            assim quem quiser ir com você, irá entrar em contato, já para quem
+            não tem carro é só chamar e marcar tudo direitinho com o dono do
+            carro, fazendo uma amizade e sem deixar de surfar."
+          />
+          <CardBarcas
+            imagem={organizar}
+            description="Você precisará entrar em contato com o anunciante da Barca para
+            marcar e confirmar presença na Barca, pedimos que avise o
+            responsável da barca caso ocorra imprevistos e Não vamos tolerar
+            muitos canos nas barcas, só confirme se você for mesmo."
+          />
         </div>
       </main>
-      <footer className="block-footer">
-        <strong>Siga nas Redes Sociais</strong>
-
-        <div className="block-icons">
-          <div className="block-icons-sociais">
-            <button type="button" className="facebook">
-              <img src={facebook} alt="facebook" />
-            </button>
-            <button type="button" className="instagram">
-              <img src={instagram} alt="instagram" />
-            </button>
-          </div>
-
-          <button type="button" className="block-icons-group">
-            <img src={whatsapp} alt="whatsapp" />
-            <strong>Grupo do WhatsApp</strong>
-          </button>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
-
-export default Landing

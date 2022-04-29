@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import Eyeoff from '../../assets/images/icons/eye-off.svg'
 import Eyeo from '../../assets/images/icons/eye.svg'
 import logo from '../../assets/images/logo.svg'
-import Input from '../../components/Input'
+import Input from '../../components/UI/Input'
 import { AuthContext } from '../../contexts/Auth/AuthContext'
 
 import './styles.css'

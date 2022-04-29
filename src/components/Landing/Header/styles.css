@@ -16,6 +16,18 @@
   align-items: center;
 }
 
+.page-header-landing .top-bar-container-landing button {
+  height: 2.4rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.page-header-landing .top-bar-container-landing button:hover {
+  opacity: 0.6;
+}
+
 .page-header-landing .top-bar-container-landing a {
   height: 2.4rem;
   transition: opacity 0.2s;

@@ -1,4 +1,4 @@
-import PageHeader from '../../components/PageHeader/Adm'
+import PageHeader from '../../components/Adm/Header'
 
 import './styles.css'
 
