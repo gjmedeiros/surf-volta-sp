@@ -2,7 +2,9 @@ import camp1 from '../../assets/images/camp1.svg'
 import camp2 from '../../assets/images/camp2.svg'
 import camp3 from '../../assets/images/camp3.svg'
 import surfbt2 from '../../assets/images/surfbt2.svg'
+import CardBarcas from '../../components/Landing/CardBarcas'
 import CardItem from '../../components/Landing/CardItem'
+import CardPatrocinio from '../../components/Landing/CardPatrocinio'
 import Footer from '../../components/Landing/Footer'
 import PageHeader from '../../components/Landing/Header'
 
@@ -55,13 +57,11 @@ function Landing() {
           venha os próximos.`}
             />
           </div>
-          <div className="block-sponsors">
-            <CardItem
-              imagem={camp3}
-              description="Nosso objetivo é proporcionar surf para todos, pois acreditamos que o
-          surf é um estilo de vida e deve ser compartilhado na sua essência,
-          ecercendo o espírito aloha."
-            />
+          <div className="support">
+            <CardPatrocinio />
+            <div className="Barcas">
+              <CardBarcas />
+            </div>
           </div>
         </div>
       </main>
